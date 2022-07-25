@@ -1,0 +1,29 @@
+@hostname = http://localhost:3000
+
+### GET ALL CARS
+GET {{hostname}}/cars HTTP/1.1
+
+### GET CAR
+GET {{hostname}}/cars/1 HTTP/1.1
+
+###
+POST {{hostname}}/cars HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Tesla",
+    "model": "Model S"
+}
+
+###
+PATCH {{hostname}}/cars/2 HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Tesla",
+    "model": "Model S"
+}
+
+###
+DELETE {{hostname}}/cars/2 HTTP/1.1
+content-type: application/json
