@@ -6,7 +6,7 @@ GET {{hostname}}/cars HTTP/1.1
 ### GET CAR
 GET {{hostname}}/cars/949eb314-a034-4bef-8e5f-5fd2f1e4284e HTTP/1.1
 
-###
+### CREATE CAR
 POST {{hostname}}/cars HTTP/1.1
 content-type: application/json
 
@@ -15,8 +15,8 @@ content-type: application/json
     "model": "Model S"
 }
 
-###
-PATCH {{hostname}}/cars/2 HTTP/1.1
+### PATCH CAR
+PATCH {{hostname}}/cars/afa9c98d-7304-4ad7-81c4-87dca38eb58c HTTP/1.1
 content-type: application/json
 
 {
@@ -24,6 +24,6 @@ content-type: application/json
     "model": "Model S"
 }
 
-###
-DELETE {{hostname}}/cars/2 HTTP/1.1
+### DELETE CAR
+DELETE {{hostname}}/cars/3f673606-0fb1-4dfa-bebe-892aa0910f33 HTTP/1.1
 content-type: application/json
