@@ -1,0 +1,28 @@
+@hostname = http://localhost:3000
+@resource = brands
+
+### GET ALL
+GET {{hostname}}/{{resource}} HTTP/1.1
+
+### GET ONE
+GET {{hostname}}/{{resource}}/b3e95394-38e6-411d-ad9d-22cc8c93145e HTTP/1.1
+
+### CREATE
+POST {{hostname}}/{{resource}} HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Hummer"
+}
+
+### UPDATE
+PATCH {{hostname}}/{{resource}}/b3e95394-38e6-411d-ad9d-22cc8c93145e HTTP/1.1
+content-type: application/json
+
+{
+    "name": "TOYOTA2"
+}
+
+### DELETE
+DELETE {{hostname}}/{{resource}}/b3e95394-38e6-411d-ad9d-22cc8c93145e HTTP/1.1
+content-type: application/json
